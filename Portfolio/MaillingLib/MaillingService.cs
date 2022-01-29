@@ -60,11 +60,11 @@ namespace Portfolio.MaillingLib
                 //We will say we are sending HTML. But there are options for plaintext etc. 
                 myMail.Body = new TextPart(TextFormat.Html)
                 {
-                    Text = "<p>Hi, this is " + message.Gender + " " + message.FirstName + " " + message.LastName + "</p>"
+                    Text = "<p>Hi, this is " + message.Gjinia + " " + message.Emri + " " + message.Mbiemri + "</p>"
                             + "<br />"
-                            + "<p>" + message.ExtraComment + "</p>"
+                            + "<p>" + message.Komentet + "</p>"
                             + "<br />"
-                            + "<p>My Mobile: " + message.Mobile + "</p>"
+                            + "<p>My Mobile: " + message.Telefoni + "</p>"
                             + "<p>My Email: " + message.Email + "</p>"
                 };
 
