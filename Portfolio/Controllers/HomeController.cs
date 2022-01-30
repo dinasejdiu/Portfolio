@@ -39,7 +39,7 @@ namespace Portfolio.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Contact()
+        public IActionResult Kontakti()
         {
             return View();
         }

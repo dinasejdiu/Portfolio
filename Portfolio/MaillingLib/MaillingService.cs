@@ -57,14 +57,14 @@ namespace Portfolio.MaillingLib
                 myMail.From.Add(MailboxAddress.Parse(smtpUserName));
 
                 myMail.Subject = emailSubject;
-                //We will say we are sending HTML. But there are options for plaintext etc. 
+
                 myMail.Body = new TextPart(TextFormat.Html)
                 {
                     Text = "<p>Hi, this is " + message.Gjinia + " " + message.Emri + " " + message.Mbiemri + "</p>"
                             + "<br />"
                             + "<p>" + message.Komentet + "</p>"
                             + "<br />"
-                            + "<p>My Mobile: " + message.Telefoni + "</p>"
+                            + "<p>My Telefoni: " + message.Telefoni + "</p>"
                             + "<p>My Email: " + message.Email + "</p>"
                 };
 
@@ -72,11 +72,8 @@ namespace Portfolio.MaillingLib
                 {
                     client.Connect(smtpServer, smtpPort, SecureSocketOptions.StartTls);
 
-                    // Note: since we don't have an OAuth2 token, disable
-                    // the XOAUTH2 authentication mechanism.
                     client.AuthenticationMechanisms.Remove("XOAUTH2");
 
-                    // Note: only needed if the SMTP server requires authentication
                     client.Authenticate(smtpUserName, smtpPassword);
 
                     await client.SendAsync(myMail);

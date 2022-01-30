@@ -10,7 +10,7 @@
     },
     mounted() {
         axios.get(this.url_new)
-            .then(response => (console.log('Welcome to Shawn\'s Website')));
+            .then(response => (console.log('Welcome to Erodina\'s Website')));
         window.setInterval(this.RefreshViewers, 5000);
     },
     methods: {

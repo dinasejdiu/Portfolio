@@ -71,7 +71,7 @@ namespace Portfolio
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Ballina}/{action=Rreth Meje}/{id?}");
+                    pattern: "{controller=Home}/{action=RrethMeje}/{id?}");
             });
         }
     }

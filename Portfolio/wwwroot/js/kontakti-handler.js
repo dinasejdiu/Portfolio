@@ -34,7 +34,7 @@ function onSubmit() {
 
         $.ajax({
             type: 'POST',
-            url: '../Home/Contact',
+            url: '../Home/Kontakti',
             data: formData,
             cache: false,
             processData: false,
