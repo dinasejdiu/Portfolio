@@ -4,21 +4,8 @@ for details on configuring this project to bundle and minify static web assets. 
 html {
     min-width: 320px;
 }
-/*profile picture*/
-.profile-picture {
-    background-image: url(/images/);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    width: 300px;
-    border-radius: 150px;
-    margin: auto;
-}
 
-    .profile-picture:hover {
-        box-shadow: #3e4396 0px 0px 20px 15px;
-        animation: profile-shadow 3s infinite;
-    }
+
 
 @keyframes profile-shadow {
     0% {
@@ -77,19 +64,7 @@ html {
 .text-decoration-none {
     text-decoration: none !important;
 }
-/*fixed views bar*/
-#views {
-    z-index: 1600;
-    padding: 10px;
-    border-radius: 10px 0px 0 10px;
-    display: inline-flex;
-    position: fixed;
-    top: 80px;
-    right: -10px;
-    background-color: #080808;
-    overflow: hidden;
-    animation: fade-in 1.5s linear;
-}
+
 
 @keyframes fade-in {
     0% {
@@ -105,30 +80,7 @@ html {
     }
 }
 
-#views h5, #views p {
-    line-height: 40px;
-}
 
-.views-num-top {
-    position: absolute;
-    top: -40px;
-}
-
-.views-num-bottom {
-    position: absolute;
-    top: 0px;
-}
-
-.views-num-extender {
-    position: relative;
-    top: 300px;
-    z-index: -1000;
-}
-
-.views-top-to-bottom {
-    transform: translate(0,0);
-    animation: top-to-bottom 1s linear;
-}
 
 @keyframes top-to-bottom {
     0% {

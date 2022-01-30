@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+	<ItemGroup>
+		<Folder Include="wwwroot\icons\" />
+		<Folder Include="wwwroot\images\" />
+		<Folder Include="MaillingLib\" />
+		<Folder Include="Data\" />
+	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="Google.Apis.Auth" Version="1.47.0" />
     <PackageReference Include="MailKit" Version="2.7.0" />
